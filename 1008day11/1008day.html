@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "1008day.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/74d11012bf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td class = "display" colspan = "4"></td>
+            </tr>
+            <tr>
+                <td class = "result" colspan = "4"></td>
+            </tr>
+            <tr class = "color">
+                <td onclick = "allClear()" colspan = "3">AC</td>
+                <td class = "str" onclick = "add('/')">÷</td>
+            </tr>
+            <tr class = "color">
+                <td onclick = "add(7)">7</td>
+                <td onclick = "add(8)">8</td>
+                <td onclick = "add(9)">9</td>
+                <td class = "str" onclick = "add('*')">x</td>
+            </tr>
+            <tr class = "color">
+                <td onclick = "add(4)">4</td>
+                <td onclick = "add(5)">5</td>
+                <td onclick = "add(6)">6</td>
+                <td class = "str" onclick = "add('-')">-</td>
+            </tr>
+            <tr class = "color">
+                <td onclick = "add(1)">1</td>
+                <td onclick = "add(2)">2</td>
+                <td onclick = "add(3)">3</td>
+                <td class = "str" onclick = "add('+')">+</td>
+            </tr>
+            <tr class = "color">
+                <td onclick = "add(0)" colspan = "2">0</td>
+                <td onclick = "add('.')">.</td>
+                <td class = "str" onclick = "equal()">=</td>
+            </tr>
+        </table>
+    </div>
+    
+
+
+
+    <script src = "1008day.js"></script>
+</body>
+</html>
