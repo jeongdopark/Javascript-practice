@@ -1,0 +1,58 @@
+
+
+*{
+    margin : 0;
+    padding : 0;
+    background : #6F56F5;
+}
+
+.container{
+    text-align : center;
+    margin-top : 15%;
+}
+.icon{
+    color : white;
+    font-size : 6rem;
+    
+}
+.li-list{
+    display : flex;
+    justify-content: center;
+    height : 30px;
+    
+}
+
+.li-list li{
+    list-style: none;
+    margin : 30px 5px;
+    font-size : 20px;
+    line-height : 30px;
+}
+.li-list li:nth-child(2){
+    position : relative;
+    top : 6px;
+    
+    height : 60%;
+    border : 1px solid black;
+}
+
+.change{
+    font-size : 3.2rem;
+    position : relative;
+    display : inline-block;
+    
+}
+
+.change::after{
+    display : inline-block;
+    position : absolute;
+    right : -15px;
+    top : 0;
+    content : "";
+    width : 5px;
+    height : 100%;
+    background : black;
+}
+.change.active::after{
+    display : none;
+}
