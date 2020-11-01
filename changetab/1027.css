@@ -1,0 +1,42 @@
+
+*{
+    padding :0;
+    margin : 0;
+}
+
+
+.standard{
+    position : relative;
+    width : 500px;
+    margin : 0 auto;
+}
+.list{
+    display :flex;
+    justify-content: end;
+}
+.list li{
+    margin : 10px;
+    list-style: none;
+    width : 50px;
+    height : 20px;
+}
+.list li a{
+    text-decoration: none;
+    color : silver;
+    padding : 5px;
+    
+}
+.hightlight{
+    position : absolute;
+    left : 0;
+    top : 0;
+    width : 55px;
+    background : black;
+    height : 20px;
+    margin-top : 10px;
+    z-index : -1;
+    border-radius: 5px;
+    transition : 0.4s;
+}
+
+
