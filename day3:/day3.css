@@ -1,0 +1,45 @@
+
+
+*{
+    margin : 0;
+    padding : 0;
+}
+
+
+.content-box{
+    margin-top : 10%;
+    display : flex;
+    justify-content: space-around;
+}
+#all-collapse{
+    cursor : pointer;
+}
+
+.title{
+    display : block;
+
+}
+
+.acodion{
+    display : flex;
+    position : relative;
+    justify-content: space-between;
+    height : 1000px;
+    text-align : center;
+    margin : 10%;
+}
+
+.acodion-heading{
+    height : 20px;
+    background : black;
+    color : #ccc;
+    width : 100px;
+    margin : 0 auto;
+    cursor : pointer;
+    border-radius : 5px;
+}
+
+.acodion-body{
+    margin : 10px;
+    width : 100px;
+}
