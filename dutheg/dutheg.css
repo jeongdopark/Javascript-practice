@@ -58,11 +58,15 @@ li{
     color : white;
     width : 50%;
     height : 70px;
+    cursor : pointer;
 }
 
 .point{
     font-size : 2.5rem;
     padding-top : 30px;
+}
+span{
+    cursor: pointer;
 }
 
 .modal{
@@ -87,8 +91,35 @@ li{
 .dutheg{
     display : none;
 }
-/* .display{
+.display{
     display : block;
-    height : 130px;
-    padding-left : 50px;
-} */
+    width : 120px;
+    height : 110px;
+    padding-right : 40px;
+    padding-left : 30px;
+}
+
+@keyframes shake{
+    0% {
+        transform : translateX(0) rotate(0)
+    }
+    20%{
+        transform : translateX(10px) rotate(5deg)
+    }
+    40%{
+        transform : translateX(-10px) rotate(-5deg)
+    }
+    60%{
+        transform : translateX(10px) rotate(5deg)
+    }
+    80%{
+        transform : translateX(-10px) rotate(-5deg)
+    }
+    100%{
+        transform : translateX(10px) rotate(5deg)
+    }
+}
+
+.shake{
+    animation : shake 0.01s infinite linear alternate;
+}
