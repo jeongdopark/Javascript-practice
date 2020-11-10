@@ -1,0 +1,36 @@
+
+
+*{
+    margin : 0;
+    padding : 0;
+}
+
+ul{
+    text-align : center;
+    margin-top : 10%;
+}
+
+ul li a{
+    color : silver;
+    font-size : 4rem;
+    text-decoration : none;
+    position : relative;
+}
+ul li{
+    margin-top : 50px;
+}
+
+ul a:before{
+    content : attr(data-text);        
+    position : absolute;
+    left: 0;
+    top : 0;
+    color : #3498db;
+    width : 0;
+    overflow : hidden;
+    transition: .2s ease-in;
+}
+
+ul a:hover:before{
+    width : 100%;
+}

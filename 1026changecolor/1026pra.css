@@ -1,0 +1,42 @@
+
+*{
+    padding : 0;
+    margin : 0;
+}
+
+.title{
+    text-align: center;
+    margin-top : 10px;
+    font-size : 2rem;
+}
+.container{
+    display : flex;
+    justify-content: space-around;
+    padding-bottom : 20px;
+    border-bottom : 1px solid black;
+}
+
+.container li{
+    list-style : none;
+    margin : 0 20px 0 20px;
+    font-size : 1.3rem;
+    position : relative;
+}
+.container li a{
+    text-decoration : none;
+    color : silver;
+}
+
+.container a:before{
+    content : attr(data-text);
+    position : absolute;
+    
+    color : #3498db;
+    overflow : hidden;
+    width : 0;
+    white-space : nowrap;
+    transition : 0.2s ease-in-out;
+}
+.container a:hover:before{
+     width : 100%;
+}
