@@ -1,0 +1,67 @@
+
+*{
+    margin : 0;
+    padding : 0;
+}
+
+.container{
+    
+    width : 100%;
+    text-align : center;
+    margin-top : 20%;
+}
+
+.pressBtn{
+    display : block;
+    cursor: pointer;
+    margin : 0 auto;
+    line-height : 80px;
+    width : 200px;
+    height : 80px;
+    border : 1px solid black;
+    border-radius : 5px;
+}
+.errorModal{
+    display : none;
+    position : relative;
+    width : 400px;
+    height : 250px;
+    margin : 0 auto;
+    box-shadow: 3px 3px 3px 3px gray;
+    border-radius : 5px;
+}
+h2{
+    padding: 30px 0;
+}
+p{
+    padding : 30px 0px;
+}
+.colorBlock{
+    width : 100%;
+    position : absolute;
+    background-color : red;
+    height : 50px;
+    line-height : 50px;
+    bottom : 0;
+    cursor: pointer;
+}
+
+.shakeIt{
+    animation-duration : 0.1s;
+    
+    animation-name: shakeIt;
+    animation-iteration-count: 3;
+}
+
+@keyframes shakeIt{
+    0%{
+        transform : translateX(0);
+    }
+    50%{    
+        transform : translateX(-5px);
+    }
+    100%{
+        transform : translateX(5px);
+    }
+    
+}
