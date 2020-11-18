@@ -1,0 +1,67 @@
+
+
+*{
+    padding : 0;
+    margin : 0;
+}
+
+
+.fix{
+    display : flex;
+    position : relative;
+    top : 50px;
+    justify-content: space-around;
+    border : 1px solid #ccc;
+}
+
+.site-logo{
+    margin-right : 20%;
+}
+
+.nav{
+    list-style: none;
+    display : flex;
+}
+.nav a{
+    text-decoration: none;
+    color : black;
+    margin-left : 30px;
+}
+
+.subscribe{
+    margin : 0 auto;
+    width : 80%;
+    padding-top : 20%;
+}
+
+.subscribe#sub2{
+    padding-bottom : 10%;
+}
+
+.footer{
+    height : 50px;
+    background : black;
+    color : white;
+    text-align : center;
+    line-height : 50px;
+}
+
+.fix-clone{
+    
+    position : fixed;
+    top : -100px;
+    width : 100%;
+    transition : top 0.2s ease-out;
+}
+.fix-clone .fix{
+    opacity : 0.9;
+    background : black;
+    color : white;
+    top: 0;
+
+}
+
+.fix-clone.visible{
+    top : 0;
+
+}

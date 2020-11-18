@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin : 0; 
+}
+
+
+.clock{
+    font-size : 4rem;
+    text-align: center;
+    margin-top : 10%;
+}
+
+.js-form{
+    text-align: center;
+    margin-top : 30px;
+}
+.js-greeting{
+    text-align: center;
+    margin-top : 30px;
+    font-size : 20px;
+}
+
+.form, .greeting{
+    display: none;
+}
+
+.showing{
+    display : block;
+}
+
+.js-todoForm{
+    text-align: center;
+    margin-top : 30px;
+}
+.todoUl{
+    text-align: center;
+}

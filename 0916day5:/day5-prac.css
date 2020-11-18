@@ -1,0 +1,61 @@
+
+
+*{
+    padding: 0;
+    margin : 0;
+}
+
+.container{
+    margin : 0 auto;
+}
+
+.menu{
+    display : flex;
+    justify-content: center;
+}
+
+.menu li{
+    display : block;
+    list-style: none;
+    padding : 0 20px;
+    margin : 10px;
+    border-radius : 5px;    
+}
+
+.menu li a {
+    text-decoration : none;
+    color : black;
+    
+}
+
+.subscribe{
+    margin :  0 20%;
+}
+
+.menu-container{
+    position : relative;
+    width : 310px;
+    margin : 0 auto;
+}
+
+.select{
+    position : absolute;
+    width : 82px;
+    height : 20px;
+    left : 0;
+    top : 10px;
+    background : black;
+    opacity: 0.8;
+    border-radius : 5px;
+    z-index : -1;
+}
+
+.change{
+    color : white;
+    background : none;
+}
+
+.bottom{
+    border-bottom : 2px solid silver;
+    
+}

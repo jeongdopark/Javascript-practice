@@ -1,0 +1,37 @@
+
+
+*{
+    margin : 0;
+    padding : 0;
+    font-size : 1rem;
+    font-family: /* 본문용 서체 */
+  '-apple-system', 'BlinkMacSystemFont', 'Apple SD Gothic Neo',
+  'Inter', 'Spoqa Han Sans', 'Segoe UI', Sans-Serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.container{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    height : 500px;
+    flex-direction: column;
+}
+
+
+.hexColor{
+    font-size : 3em;
+    margin : 50px;
+}
+
+.btnContainer{
+    width : 200px;
+    height : 50px;
+    background : white;
+    box-shadow: 4px 4px 4px 4px #dedede;
+    border-radius : 7px;
+    text-align : center;
+    line-height : 50px;
+    cursor: pointer;
+    
+}
