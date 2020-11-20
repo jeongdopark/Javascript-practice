@@ -5,46 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel = "stylesheet" href = "accountBook.css"/>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
     <title>가계부</title>
 </head>
 <body>
     <div class="container">
         <div class="inner-container">
-            <div class="up-Container">
-                 <div class="greeting"></div>
-                 <div class="expend-Container">
-                     <div class="inputMoney"></div>
-                     <div class="outputMoney"></div>
-                 </div>
+            <div class="upContainer">
+                <div class="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="trick"></div>
+                <div class="menuContainer">
+                    <ul>
+                        <li>날짜 선택</li>
+                        <li>새로운 내역 추가</li>
+                    </ul>
+                </div>
+                
+                <div class="greeting">안녕하세요 박정도님 ! <br>
+                    11월 거래 금액은 <br>
+                    Hello원 입니다.
+                </div>
+                <div class="expendContainer">
+                    <div class="inputMoney same">
+                        <ul class = "moneyContainer first">
+                            <li>들어온 돈</li>
+                            <li class = "intoMoney">+ 1000 Won</li>
+                        </ul>
+                    </div>
+                    <div class="outputMoney same">
+                        <ul class = "moneyContainer second">
+                            <li>나간 돈</li>
+                            <li class = "outMoney">- 1000 Won</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="down-Container">
-                <div class="history-Container">
+            <div class="downContainer">
+                <div class="historyContainer">
                     <ul class = "history">
                         <li class="list">전체 내역</li>
                         <li class="list">수입</li>
                         <li class="list">지출</li>
                     </ul>
                 </div>
-                <div class="expend-Register-Container">
-
+                <div class="expendRegisterContainer">
+                    <div class = "registerContainer">
+                        <div class = "day">2020-11-18</div>
+                        <div class = "register">
+                            <div class="registerPurpose">자바스크립트 책 구매</div>
+                            <div class="registreMoney moneyMinus"> -20,000원</div>
+                        </div>
+                        <div class="delete"><i class="fas fa-backspace"></i></div>
+                    </div>
                 </div>
-                <div class="new-Expend-Add-Container">
-                    <div class="plus-button"></button>
+                <div class="newExpendAddContainer">
+                    <i class="fas fa-plus plusButton"></i>
                     <p>새 거래 내역 추가</p>
                 </div>
-                <div class="new-Expend-Container">
-                    <p class="line">새로운 거래</p>
+                <div class="line">새로운 거래</div>
+                <div class="newExpendContainer">
                     <div class="date-Container">
                         <h3>날짜</h3>
-                        <div class="date-input-container">
-                            <input type="text" placeholder="year">
-                            <input type="text" placeholder="month">
-                            <input type="text" placeholder="day">
+                        <div class="dateInputContainer">
+                            <input class = "inputYear form inputWidth" type="text" placeholder="year">
+                            <input class = "inputMonth form inputWidth" type="text" placeholder="month">
+                            <input class = "inputDay form inputWidth" type="text" placeholder="day">
                         </div>            
                     </div>
                     <div class="purpose">
                         <h3>내용</h3>
+                        <div class="selectPurpose">
+                            <div class="getPurpose sameCss form">들어온 돈</div>
+                            <div class="outputPurpose sameCss form">나간 돈</div>
+                            <input class ="inputPurpose form" type="text" placeholder="내용을 입력하세요">
+                        </div>
+                    </div>
+                    <div class="priceContainer">
+                        <h3>금액</h3>
+                        <div class="inputPriceContainer">
+                            <input type="text" class="inputPrice form" placeholder="금액을 입력하세요">
+                        </div>
                         
+                        <div class="finishButton form sameButtonCss">저장</div>
+                        <div class="closeButton form sameButtonCss">취소</div>
                     </div>
                 </div>
             </div>
@@ -52,6 +104,8 @@
     </div>
 
 
-    <script src = "accountBook.js"></script>
+    <script src = "toggleBtn.js"></script>
+    <script src = "newExpand.js"></script>
+    <script src = "inputInfo.js"></script>
 </body>
 </html>
