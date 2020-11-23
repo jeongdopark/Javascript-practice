@@ -1,4 +1,5 @@
 
+import {blueBtn, redBtn, purpose} from "./inputInfo.js"
 
 const plusBtn = document.querySelector('.plusButton'),
 Btncontainer = document.querySelector('.newExpendAddContainer'),

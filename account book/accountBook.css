@@ -236,6 +236,8 @@ font-family: 'Karla', sans-serif;
     
 }
 
+
+
 /* 추가 버튼 입력 후 생기는 부분 */
 .expendRegisterContainer{
     overflow-y : scroll;
@@ -288,9 +290,9 @@ font-family: 'Karla', sans-serif;
      line-height : 50px;
      color : #898989;
      height : 50px;
-     
-     
+     transition : 0.2s ease-out;
 }
+
 .inputWidth{
     width : 28%;
 }
@@ -374,4 +376,15 @@ font-family: 'Karla', sans-serif;
 .registerContainer{
     display : flex;
     flex-direction : row;
+}
+
+/* 자바스크립트 add 부분 */
+
+.effectBlue{
+    background-color : #0080ff;
+    color : white;
+}
+.effectRed{
+    background-color : #dc143c;
+    color : white;
 }
