@@ -1,4 +1,7 @@
-import {addRegister} from "./addHistory.js"
+
+let blueBtn = 0 , redBtn = 0 , infoArray = [];
+
+export {blueBtn, redBtn, infoArray, parseInfo ,info_LS};
 
 const inputYear = document.querySelector('.inputYear'),
 inputMonth = document.querySelector('.inputMonth'),
@@ -15,15 +18,7 @@ newExpendContainer  = document.querySelector('.newExpendContainer');
 
 const info_LS = "registerInfo";
 
-
-export let blueBtn = 0,
-redBtn = 0,
-purpose,
-price,
-year,
-month,
-day,
-infoArray = [];
+let parseInfo = JSON.parse(localStorage.getItem(info_LS));
 
 function effectBtn(){
     getPurpose.addEventListener('click', () => {
@@ -35,6 +30,8 @@ function effectBtn(){
             outputPurpose.classList.remove('effectRed');
             getPurpose.classList.add('effectBlue');
         }
+        console.log(blueBtn);
+        console.log(redBtn);
     });
 
     outputPurpose.addEventListener('click', () => {
@@ -46,19 +43,24 @@ function effectBtn(){
             outputPurpose.classList.add('effectRed');
             getPurpose.classList.remove('effectBlue');
         }
+        console.log(blueBtn);
+        console.log(redBtn);
     })
 }
 
-function writePurpose(){
+function register(){
     finishButton.addEventListener('click', () => {
         newExpendAddContainer.style.display = 'block';
         newExpendContainer.style.display = 'none';
         line.style.display = 'none';
         lcInfo();
-    })
-    
+        
+
+        // daySection.innerHTML = 
+    })    
 }
 function lcInfo(){
+    let id = infoArray.length;
     let infoObj = {
         blueBtnValue : blueBtn,
         redBtnValue : redBtn,
@@ -66,24 +68,25 @@ function lcInfo(){
         price : inputPrice.value,
         year : inputYear.value,
         month : inputMonth.value,
-        day : inputDay.value
+        day : inputDay.value,
+        number : id
     };
     infoArray.push(infoObj);
-    saveInfo();
+    localStorage.setItem(info_LS, JSON.stringify(infoArray));    
 }
-function saveInfo(){
-    localStorage.setItem(info_LS, JSON.stringify(infoArray));
-    console.log(infoArray);
-    
-}
-
 function loadInfo(){
     const currentInfo = localStorage.getItem(info_LS);
-    if(currentInfo !== null){
-        const parseInfo = JSON.parse(currentInfo);
 
+    if(currentInfo !== null){
+        let parseInfo = JSON.parse(currentInfo);
+        infoArray = parseInfo;
+            
+    }else if(currentInfo == null){
+        infoArray = [];
     }
 }
+
 loadInfo();
 effectBtn();
-writePurpose();
+register();
+

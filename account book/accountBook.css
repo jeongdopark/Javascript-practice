@@ -220,7 +220,7 @@ font-family: 'Karla', sans-serif;
     background : #e9e9e9;
     margin-top : 30px;
     margin-bottom : 70px;
-    
+    transition-duration: 0.1s;
 }
 
 .newExpendAddContainer p{
@@ -266,6 +266,7 @@ font-family: 'Karla', sans-serif;
     width : 75%;
     margin : 0 auto;
     display : none;
+    transition-duration: 0.1s;
 }
 /* 날짜 섹션 */
 .line{
@@ -274,6 +275,7 @@ font-family: 'Karla', sans-serif;
     font-size : 1.5rem;
     padding-left : 35px;
     display : none;
+    transition-duration: 0.1s;
 }
 
 .dateInputContainer{
@@ -387,4 +389,15 @@ font-family: 'Karla', sans-serif;
 .effectRed{
     background-color : #dc143c;
     color : white;
+}
+
+.effectFadeinit{
+    opacity: 0;
+    padding-top: 1em;
+}
+
+.effectFaderesult{
+    opacity: 1;
+    padding-top: 0;
+    transition: all 1s;
 }
