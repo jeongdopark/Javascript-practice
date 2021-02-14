@@ -30,8 +30,6 @@ function effectBtn(){
             outputPurpose.classList.remove('effectRed');
             getPurpose.classList.add('effectBlue');
         }
-        console.log(blueBtn);
-        console.log(redBtn);
     });
 
     outputPurpose.addEventListener('click', () => {
@@ -43,8 +41,7 @@ function effectBtn(){
             outputPurpose.classList.add('effectRed');
             getPurpose.classList.remove('effectBlue');
         }
-        console.log(blueBtn);
-        console.log(redBtn);
+
     })
 }
 

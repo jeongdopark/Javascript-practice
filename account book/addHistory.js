@@ -3,6 +3,7 @@ import {blueBtn, redBtn, infoArray, parseInfo, info_LS} from "./inputInfo.js"
 const expendRegisterContainer = document.querySelector('.expendRegisterContainer'),
 finishButton = document.querySelector('.finishButton');
 
+let count = 0
 
 
 
@@ -23,6 +24,8 @@ function loadRegister(){
         innerContainer.className = 'register';
         moneySection.className = 'registreMoney';
         deleteSection.className = 'delete';
+        deleteSection.id = `${count}`
+        count += 1
         registerContainer.appendChild(daySection);
         innerContainer.appendChild(purposeSection);
         innerContainer.appendChild(moneySection);
@@ -58,6 +61,8 @@ function RegisterOutLine(){
         innerContainer.className = 'register';
         moneySection.className = 'registreMoney';
         deleteSection.className = 'delete';
+        // deleteSecttion.id = 
+        // count += 1
         registerContainer.appendChild(daySection);
         innerContainer.appendChild(purposeSection);
         innerContainer.appendChild(moneySection);

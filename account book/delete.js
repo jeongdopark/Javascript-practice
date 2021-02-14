@@ -5,10 +5,16 @@ window.addEventListener('load', () => {
     const deleteBtn = document.querySelectorAll('.delete'); 
     
     for(let i = 0; i < deleteBtn.length; i ++){
+        
         deleteBtn[i].addEventListener('click', (e) => {
-            console.log(e.target);
+            expendRegisterContainer.removeChild(e.target.parentNode.parentNode)
             
-            // expendRegisterContainer.removeChild(e.target.parentNode.parentNode)
+            const newList = infoArray.filter((infoArray)=>{
+                return e.target.parentNode.id !== infoArray.number
+            })
+            console.log(newList);
+            
+            
             
         })
     }
